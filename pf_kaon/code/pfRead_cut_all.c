@@ -104,10 +104,10 @@ void pfRead_cut_all(const char *fileName, const char *outputFileName){
      const float can_distance = can_head.GetField<float>(distance);
      const float can_l_over_dl = can_head.GetField<float>(l_over_dl);
      //cuts
-     if (can_l_over_dl < 30) continue;
-     if (can_distance > 0.2) continue;
-     if (can_chi2_geo > 10) continue;
-     if (can_chi2_topo > 10) continue;
+     if (can_l_over_dl < 40) continue;
+     if (can_distance > 0.4) continue;
+     if (can_chi2_geo > 20) continue;
+     if (can_chi2_topo > 12) continue;
 
 
       const float can_px = can_head.GetField<float>(canpx);
