@@ -33,8 +33,8 @@ int main(int argc, char** argv) {
   man->SetOutputName("PFSimpleOutput.root", "pTree");
 
   auto* in_converter = new ConverterIn();
-  in_converter->SetTrackCuts(new AnalysisTree::Cuts("Cut to reproduce KFPF", {AnalysisTree::EqualsCut("VtxTracks.pass_cuts", 1)}));
-  in_converter->SetIsShine(false);//TODO maybe change name
+//  in_converter->SetTrackCuts(new AnalysisTree::Cuts("Cut to reproduce KFPF", {AnalysisTree::EqualsCut("VtxTracks.pass_cuts", 1)}));
+//  in_converter->SetIsShine(false);//TODO maybe change name
 
   auto* pf_task = new PFSimpleTask();
   pf_task->SetInTask(in_converter);

@@ -19,9 +19,10 @@ pfpath=$WORK/pf_simple/main_sign
 mkdir -p $PWD/fileslists
 list=$PWD/fileslists/filelist_${INDEX}.txt
 : >  $list
-for ((i=1+10*(INDEX-1); i<=10*INDEX; i++)); do
-  echo /lustre/cbm/users/lubynets/cbm2atree/outputs/apr20_fr_18.2.1_fs_jun19p1/dcmqgsm_smm_pluto/auau/12agev/mbias/sis100_electron_target_25_mkm/AT2/$i/$i.analysistree.root >>  $list
-done
+#for ((i=1+10*(INDEX-1); i<=10*INDEX; i++)); do
+#  echo /lustre/cbm/users/lubynets/cbm2atree/outputs/apr20_fr_18.2.1_fs_jun19p1/dcmqgsm_smm_pluto/auau/12agev/mbias/sis100_electron_target_25_mkm/AT2/$i/$i.analysistree.root >>  $list
+#done
+echo /lustre/cbm/users/lubynets/cbm2atree/outputs/apr20_fr_18.2.1_fs_jun19p1/dcmqgsm_smm_pluto/auau/12agev/mbias/sis100_electron_target_25_mkm/AT2/${INDEX}/${INDEX}.analysistree.root >>  $list
 mkdir -p $PWD/pfsimple/${INDEX}/sign
 cd $PWD/pfsimple/${INDEX}/sign
 #run pf_simple on each file
