@@ -69,7 +69,7 @@ In the main decay mode:
 \newpage
 %----------------------- objective
 \section{Objective}
-Our model will be trained to correctly distinguish between the \emph{signal} - pairs of \Pgpp and \Pgpm which where produced in the \KPshort decay, and \emph{background} - pairs of pions which aren't result of the \KPshort decay. We assume that the majority of the particles of invariant mass in $5 \sigma$ region around the \KPshort mass peak should be recognized as the K-short candidates. The ML model learns, which parameters values should be associated with the signal, and which with the background. As the mathematical ML model has no clue which data values are physically correct, we need to clean the data.
+Our model will be trained to correctly distinguish between the \emph{signal} - pairs of \Pgpp and \Pgpm which were produced in the \PKshort decay, and \emph{background} - pairs of pions which aren't result of the \KPshort decay. We assume that the majority of the particles of invariant mass in $5 \sigma$ region around the \KPshort mass peak should be recognized as the K-short candidates. The ML model learns, which parameters values should be associated with the signal, and which with the background. As the mathematical ML model has no clue which data values are physically correct, we need to clean the data.
 %---------------------- data cleaning
 \section{Data cleaning}
 To reject the numeric values of parameters which don't have physical sens, but are present in the data set, we apply some cuts before the beginning of the model training. Similarly, we reject some values which might be possible, but are rare enough, so we reject them to reduce the data.
@@ -82,7 +82,7 @@ As the K-short particle decays into two pions (in the decay mode we're able to r
 \end{center}
 Also, to reduce the amount of data, we only accept the particles with:
 \begin{center}
-    mass $<$ 2.0 GeV/$c^2$
+    mass $<$ 1.5 GeV/$c^2$
 \end{center}
 
 %---------------- distances
@@ -123,7 +123,7 @@ To reduce the data, we only preserve:
 \end{center}
 %-------------- chi square
 \subsection{Chi square}
-Following simple algebra, all chi square values must be bigger than zero:
+Since $\chi^2$ is a square distance, all the values must be bigger than zero:
 \begin{center}
     $\chi^2 > 0$
 \end{center}
@@ -138,7 +138,7 @@ Following the work of Olga for \PLambda decays, for now I set the rest of chi sq
 \subsection{Pseudorapidity}
 As pseudorapidity $\eta = -\ln{\tan(\frac{\theta}{2})}$, and the Silicon Tracking System (STS) cover the polar angles between 2.5$^{\circ}$ and 25$^{\circ}$, we decide to constrain the pseudorapidity values:
 \begin{center}
-    $ 1< \eta < 4 $
+    $ 1< \eta < 6.5 $
 \end{center}
 
 %------------------ bibliography
