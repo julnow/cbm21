@@ -1,0 +1,7 @@
+
+pf_kaon/code_mancut/.DS_Store
+pf_kaon/code_mancut/batchrun_read_cut_all.sh
+pf_kaon/code_mancut/pfRead_cut_all.c
+pf_kaon/code_mancut/pfRead_final.c
+pf_kaon/code_mancut/slurm_pfread_cut_all.sh
+pf_kaon/code_mancut/slurm_pfread_init_all.sh
